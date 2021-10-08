@@ -32,7 +32,7 @@ function Listurls() {
                 return(
                 <tr>
                     <th scope="row" key={row.id}>{row.id}</th>
-                    <td>{row.original_link}</td>
+                    <td >{row.original_link}</td>
                     <td>http://localhost:8888/{row.shortened_link}</td>
                     <td>{row.counter}</td>
                 </tr>
