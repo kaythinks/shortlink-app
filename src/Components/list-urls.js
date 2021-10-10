@@ -1,6 +1,6 @@
 import { React, useEffect, useState } from "react";
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import './../App.css';
 
 function Listurls() {
     const [data, setData] = useState("");
@@ -30,8 +30,8 @@ function Listurls() {
         <tbody>
             {data.data && data.data.map(row => {
                 return(
-                <tr>
-                    <th scope="row" key={row.id}>{row.id}</th>
+                <tr key={row.id}>
+                    <th >{row.id}</th>
                     <td >{row.original_link}</td>
                     <td>http://localhost:8888/{row.shortened_link}</td>
                     <td>{row.counter}</td>

@@ -1,5 +1,6 @@
 import { useState, React } from 'react';
-import './App.css';
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import './../App.css';
 
 function Form() {
     const [values, setValues] = useState({ 
@@ -48,8 +49,8 @@ function Form() {
 
       return (
         <form onSubmit={onSubmit} >
-          <input  type="url" required  style={{padding: "10px",width: "500px" }}  value={values.original_link} onChange={set('original_link')} />
-          <button style={{padding: "10px",margin : "10px" }} type="submit">Submit</button>
+          <input className="form-control"  type="url" required  value={values.original_link} onChange={set('original_link')} />
+          <button className="btn btn-success" type="submit">Submit</button>
         </form>
       );
     

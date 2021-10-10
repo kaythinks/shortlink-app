@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
-import Navbar from './Navbar';
+import Navbar from './Components/Navbar';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Footer from "./footer";
-import Shortenurls from "./shorten-urls";
-import Listurls from "./list-urls";
-import Notfound from "./notfound";
+import Footer from "./Components/footer";
+import Shortenurls from "./Components/shorten-urls";
+import Listurls from "./Components/list-urls";
+import Notfound from "./Components/notfound";
 
 
 const routing = (
